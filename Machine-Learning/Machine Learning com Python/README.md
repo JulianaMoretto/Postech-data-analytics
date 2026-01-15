@@ -6,7 +6,7 @@ Nesta aula, o objetivo foi construir uma **base conceitual sólida**, entendendo
 
 ---
 
-### 🎯 Conteúdos abordados
+### Conteúdos abordados
 
 - Conceito de Machine Learning e sua relação com Inteligência Artificial
 - Principais aplicações práticas:
@@ -27,7 +27,7 @@ Nesta aula, o objetivo foi construir uma **base conceitual sólida**, entendendo
 
 ---
 
-### 🛠️ Bibliotecas apresentadas
+### Bibliotecas apresentadas
 
 - NumPy – manipulação de arrays e operações matemáticas
 - Pandas – análise e preparação de dados
@@ -38,7 +38,7 @@ Nesta aula, o objetivo foi construir uma **base conceitual sólida**, entendendo
 
 ---
 
-### 🧪 Atividade prática (Hands-on)
+### Atividade prática (Hands-on)
 
 - Importação de dados com Python
 - Exploração inicial dos dados
@@ -47,19 +47,12 @@ Nesta aula, o objetivo foi construir uma **base conceitual sólida**, entendendo
 
 ---
 
-### 🚀 Objetivo do projeto
+### Objetivo do projeto
 
 Registrar e consolidar os aprendizados iniciais em Machine Learning, servindo como base para projetos mais avançados e compondo um portfólio técnico em Python e Data Science.
 
 ---
 
-### 📚 Tecnologias utilizadas
-
-- Python
-- NumPy
-- Pandas
-- Matplotlib
-- Scikit-learn
 
 ## 📘 Aula 02 – Análise Exploratória de Dados (EDA) com Python
 
@@ -69,7 +62,7 @@ Nesta aula, foram exploradas técnicas práticas de EDA utilizando Python, com o
 
 ---
 
-### 🎯 Conteúdos abordados
+### Conteúdos abordados
 
 - Introdução à Análise Exploratória de Dados (EDA)
 - Importância da EDA para entendimento do problema de negócio
@@ -84,14 +77,14 @@ Nesta aula, foram exploradas técnicas práticas de EDA utilizando Python, com o
 
 ---
 
-### 🧪 Dataset utilizado
+### Dataset utilizado
 
 - Base de dados do **Spotify**, contendo informações sobre músicas, artistas e características musicais
 - Dataset utilizado para prática de exploração e visualização de dados
 
 ---
 
-### 🛠️ Técnicas e funções aplicadas
+### Técnicas e funções aplicadas
 
 - Leitura e exploração inicial de dados:
   - `pd.read_csv`
@@ -113,7 +106,7 @@ Nesta aula, foram exploradas técnicas práticas de EDA utilizando Python, com o
 
 ---
 
-### 📊 Visualizações desenvolvidas
+### Visualizações desenvolvidas
 
 - Histogramas para análise de distribuição
 - Gráficos de barras para variáveis categóricas
@@ -123,17 +116,8 @@ Nesta aula, foram exploradas técnicas práticas de EDA utilizando Python, com o
 
 ---
 
-### 🚀 Objetivo do projeto
+### Objetivo do projeto
 
 Aplicar técnicas de Análise Exploratória de Dados para compreender profundamente um dataset real, gerar insights relevantes e preparar os dados para etapas futuras de modelagem em Machine Learning.
 
 ---
-
-### 📚 Tecnologias utilizadas
-
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
-- Google Colab
