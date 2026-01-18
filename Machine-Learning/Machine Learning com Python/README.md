@@ -121,3 +121,137 @@ Nesta aula, foram exploradas técnicas práticas de EDA utilizando Python, com o
 Aplicar técnicas de Análise Exploratória de Dados para compreender profundamente um dataset real, gerar insights relevantes e preparar os dados para etapas futuras de modelagem em Machine Learning.
 
 ---
+
+## 📘 Aula 03 – Feature Engineering com Python
+
+Este projeto faz parte do meu estudo em **Machine Learning com Python**, com foco na etapa de **Feature Engineering**, responsável por preparar e transformar os dados para que modelos de Machine Learning consigam aprender padrões de forma eficiente.
+
+Nesta aula, o foco foi trabalhar com uma **base real do IBGE (PNAD-COVID)**, aplicando técnicas de limpeza, organização e transformação de dados, etapa fundamental após a Análise Exploratória de Dados (EDA).
+
+---
+
+### Conteúdos abordados
+
+- Introdução ao conceito de Feature Engineering
+- Importância da preparação dos dados para modelos de ML
+- Trabalho com bases reais e complexas
+- Uso de dicionário de dados para interpretação das variáveis
+
+---
+
+### Dataset utilizado
+
+- **Informações de Cada**
+- Base com mais de 4600 linhas e 17 colunas, contendo dados como quantidade de quartos, andares, preço, entre outros
+
+---
+
+### Técnicas aplicadas
+
+- Seleção de variáveis relevantes
+- Renomeação de colunas para melhor legibilidade
+- Verificação e ajuste de tipos de dados (`dtype`)
+- Tratamento de dados ausentes:
+  - Remoção de linhas
+  - Remoção de colunas
+  - Estratégias de imputação
+- Normalização e padronização de dados
+- Discussão sobre impacto dessas técnicas em diferentes algoritmos
+
+---
+
+### Objetivo do projeto
+
+Preparar uma base de dados real para uso em modelos de Machine Learning, aplicando técnicas de Feature Engineering que garantam qualidade, consistência e melhor desempenho dos algoritmos.
+
+---
+
+## 📘 Aula 04 – Modelos de Regressão em Machine Learning
+
+Este projeto faz parte do meu estudo em **Machine Learning com Python**, com foco em **modelos supervisionados de regressão**, utilizados para prever valores numéricos contínuos.
+
+Nesta aula, foram apresentados os principais algoritmos de regressão, suas aplicações práticas e as métricas utilizadas para avaliar a performance dos modelos.
+
+---
+
+### Conteúdos abordados
+
+- Introdução aos modelos de regressão
+- Diferença entre regressão simples e múltipla
+- Conceitos de variável preditora e variável alvo (target)
+- Avaliação de modelos de regressão
+
+---
+
+### Algoritmos estudados
+
+- Regressão Linear (simples e múltipla)
+- Support Vector Regression (SVR)
+- Árvores de Regressão
+- KNN para regressão
+- Random Forest para regressão
+
+---
+
+### Avaliação de modelos
+
+- R² (coeficiente de determinação)
+- MAE (Erro Absoluto Médio)
+- MSE (Erro Quadrático Médio)
+- Validação cruzada
+- Análise de underfitting e overfitting
+- Comparação entre modelos
+
+---
+
+### Objetivo do projeto
+
+Compreender o funcionamento dos principais algoritmos de regressão, aprender a avaliá-los corretamente e identificar o equilíbrio entre complexidade do modelo e capacidade de generalização.
+
+---
+
+## 📘 Aula 05 – Modelos de Classificação em Machine Learning
+
+Este projeto faz parte do meu estudo em **Machine Learning com Python**, com foco em **modelos supervisionados de classificação**, utilizados para prever categorias ou classes a partir de dados rotulados.
+
+Nesta aula, foram estudados os principais algoritmos de classificação, suas aplicações práticas e as métricas utilizadas para avaliar a qualidade das predições.
+
+---
+
+### Conteúdos abordados
+
+- Introdução aos modelos de classificação
+- Diferença entre regressão e classificação
+- Conceitos de classes, rótulos e fronteiras de decisão
+- Limitações comuns em modelos de classificação
+
+---
+
+### Algoritmos estudados
+
+- Regressão Logística
+- Naive Bayes
+- Support Vector Machine (SVM)
+- K-Nearest Neighbors (KNN)
+- Árvores de Decisão
+
+---
+
+### Avaliação de modelos
+
+- Acurácia
+- Precisão e Recall
+- F1-score
+- Matriz de Confusão
+- Curva ROC e AUC
+- Validação cruzada
+- Análise de overfitting e underfitting
+- Impacto de dados desbalanceados
+
+---
+
+### Objetivo do projeto
+
+Aplicar e comparar diferentes algoritmos de classificação, entendendo seus pontos fortes, limitações e critérios de avaliação para escolher o modelo mais adequado a cada problema.
+
+---
