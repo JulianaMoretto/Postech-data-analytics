@@ -1,257 +1,313 @@
-## 📘 Aula 01 – Introdução ao Machine Learning com Python
+📘 Aula 01 – Modelos Supervisionados de Classificação com Python
 
-Este projeto faz parte do meu estudo em **Machine Learning com Python**, com foco na compreensão dos conceitos fundamentais da área e no primeiro contato com as principais bibliotecas utilizadas no desenvolvimento de modelos de ML.
+Este projeto faz parte do meu estudo em Machine Learning com Python, com foco na compreensão de problemas de classificação supervisionada e nos primeiros passos práticos para preparação de dados e estruturação de modelos.
 
-Nesta aula, o objetivo foi construir uma **base conceitual sólida**, entendendo o que é Machine Learning, suas aplicações no mercado e como os dados são preparados ao longo de um pipeline analítico até a construção e avaliação de modelos.
+Nesta aula, o objetivo foi entender quando um problema é de classificação, como os algoritmos aprendem a partir de dados rotulados e quais cuidados são necessários antes do treinamento de um modelo.
 
----
+Conteúdos abordados
 
-### Conteúdos abordados
+Diferença entre:
 
-- Conceito de Machine Learning e sua relação com Inteligência Artificial
-- Principais aplicações práticas:
-  - Detecção de fraudes
-  - Mercado financeiro
-  - Vendas e retenção de clientes
-  - Sistemas de recomendação
-- Tipos de aprendizado:
-  - Aprendizado supervisionado
-  - Aprendizado não supervisionado
-- Visão geral do pipeline de Machine Learning:
-  - Entendimento do problema de negócio
-  - Coleta de dados
-  - Exploração e visualização
-  - Feature engineering
-  - Treinamento de modelos
-  - Validação e monitoramento
+Regressão (previsão de valores numéricos)
 
----
+Classificação (previsão de classes ou categorias)
 
-### Bibliotecas apresentadas
+Conceito de modelo supervisionado
 
-- NumPy – manipulação de arrays e operações matemáticas
-- Pandas – análise e preparação de dados
-- Matplotlib – visualização de dados
-- Scikit-learn – algoritmos clássicos de Machine Learning
-- TensorFlow – redes neurais e Deep Learning
-- PyTorch – Deep Learning com foco em desempenho e GPU
+Exemplo prático: classificação de e-mails em spam e não spam
 
----
+Papel das features (variáveis explicativas) no processo de aprendizado
 
-### Atividade prática (Hands-on)
+Importância do pré-processamento dos dados
 
-- Importação de dados com Python
-- Exploração inicial dos dados
-- Uso da documentação oficial das bibliotecas
-- Estímulo à autonomia na análise de dados
+Conversão de variáveis categóricas para formato numérico
 
----
+Cuidados com representação de categorias
 
-### Objetivo do projeto
+Separação da base em treino e teste
 
-Registrar e consolidar os aprendizados iniciais em Machine Learning, servindo como base para projetos mais avançados e compondo um portfólio técnico em Python e Data Science.
+Uso do train_test_split
 
----
+Parâmetros:
 
+test_size
 
-## 📘 Aula 02 – Análise Exploratória de Dados (EDA) com Python
+random_state
 
-Este projeto faz parte do meu estudo em **Machine Learning com Python**, com foco na **Análise Exploratória de Dados (EDA)**, etapa essencial para compreender a base de dados, gerar insights e preparar informações para a construção de modelos de Machine Learning.
+stratify para balanceamento das classes
 
-Nesta aula, foram exploradas técnicas práticas de EDA utilizando Python, com o objetivo de entender a estrutura dos dados, identificar padrões, detectar problemas (como valores nulos e duplicados) e analisar relações entre variáveis.
+Bibliotecas apresentadas
 
----
+Pandas – manipulação e preparação de dados
 
-### Conteúdos abordados
+NumPy – operações matemáticas e vetoriais
 
-- Introdução à Análise Exploratória de Dados (EDA)
-- Importância da EDA para entendimento do problema de negócio
-- Etapas do processo de análise de dados:
-  - Importação do dataset
-  - Entendimento da estrutura da base
-  - Preparação dos dados
-  - Análise estatística descritiva
-  - Compreensão das variáveis
-  - Estudo das relações entre variáveis
-  - Geração de insights
+Scikit-learn – estruturação de modelos supervisionados
 
----
+Atividade prática (Hands-on)
 
-### Dataset utilizado
+Identificação de um problema de classificação
 
-- Base de dados do **Spotify**, contendo informações sobre músicas, artistas e características musicais
-- Dataset utilizado para prática de exploração e visualização de dados
+Separação correta entre variáveis explicativas (X) e variável alvo (y)
 
----
+Criação de bases de treino e teste
 
-### Técnicas e funções aplicadas
+Primeiros experimentos com modelos classificadores
 
-- Leitura e exploração inicial de dados:
-  - `pd.read_csv`
-  - `head()` e `tail()`
-  - `shape`
-  - `info()`
-- Análise estatística:
-  - `describe()` e `describe().T`
-- Qualidade dos dados:
-  - Identificação de dados duplicados (`duplicated`, `duplicated().sum()`)
-  - Identificação de valores nulos (`isnull`, `isnull().sum()`)
-- Análise de variáveis:
-  - Frequência de categorias com `value_counts()`
-  - Distribuição de variáveis numéricas com `hist()`
-- Análise de relações entre variáveis:
-  - Pairplot
-  - Boxplot
-  - Mapa de calor (correlação)
+Objetivo do projeto
 
----
+Aprender a estruturar corretamente um problema de classificação supervisionada, preparando os dados e criando a base necessária para aplicação e comparação de algoritmos nas aulas seguintes.
 
-### Visualizações desenvolvidas
+📘 Aula 02 – Modelos Supervisionados de Classificação: KNN e SVM
 
-- Histogramas para análise de distribuição
-- Gráficos de barras para variáveis categóricas
-- Boxplots para comparação entre variáveis numéricas e categóricas
-- Pairplot para análise inicial de correlações
-- Heatmap para identificação de correlações fortes entre variáveis
+Este projeto aprofunda o estudo de modelos supervisionados de classificação, com foco nos algoritmos K-Nearest Neighbors (KNN) e Support Vector Machines (SVM).
 
----
+O objetivo foi compreender o funcionamento matemático e geométrico desses modelos, além de aplicar ajustes de hiperparâmetros e interpretar seus resultados.
 
-### Objetivo do projeto
+Conteúdos abordados
 
-Aplicar técnicas de Análise Exploratória de Dados para compreender profundamente um dataset real, gerar insights relevantes e preparar os dados para etapas futuras de modelagem em Machine Learning.
+Algoritmo KNN:
 
----
+Classificação baseada em proximidade
 
-## 📘 Aula 03 – Feature Engineering com Python
+Métricas de distância (Euclidiana e Manhattan)
 
-Este projeto faz parte do meu estudo em **Machine Learning com Python**, com foco na etapa de **Feature Engineering**, responsável por preparar e transformar os dados para que modelos de Machine Learning consigam aprender padrões de forma eficiente.
+Impacto do número de vizinhos (k)
 
-Nesta aula, o foco foi trabalhar com uma **base real do IBGE (PNAD-COVID)**, aplicando técnicas de limpeza, organização e transformação de dados, etapa fundamental após a Análise Exploratória de Dados (EDA).
+Importância do escalonamento dos dados
 
----
+Algoritmo SVM:
 
-### Conteúdos abordados
+Margem de separação entre classes
 
-- Introdução ao conceito de Feature Engineering
-- Importância da preparação dos dados para modelos de ML
-- Trabalho com bases reais e complexas
-- Uso de dicionário de dados para interpretação das variáveis
+Hiperparâmetro C e regularização
 
----
+Sensibilidade à escala dos dados
 
-### Dataset utilizado
+Classificação linear e não linear
 
-- **Informações de Cada**
-- Base com mais de 4600 linhas e 17 colunas, contendo dados como quantidade de quartos, andares, preço, entre outros
+Uso de kernels (polinomial e RBF)
 
----
+Comparação entre modelos supervisionados
 
-### Técnicas aplicadas
+Bibliotecas apresentadas
 
-- Seleção de variáveis relevantes
-- Renomeação de colunas para melhor legibilidade
-- Verificação e ajuste de tipos de dados (`dtype`)
-- Tratamento de dados ausentes:
-  - Remoção de linhas
-  - Remoção de colunas
-  - Estratégias de imputação
-- Normalização e padronização de dados
-- Discussão sobre impacto dessas técnicas em diferentes algoritmos
+Scikit-learn – KNN, SVM e pipelines
 
----
+NumPy – manipulação de dados
 
-### Objetivo do projeto
+Pandas – estruturação dos datasets
 
-Preparar uma base de dados real para uso em modelos de Machine Learning, aplicando técnicas de Feature Engineering que garantam qualidade, consistência e melhor desempenho dos algoritmos.
+Atividade prática (Hands-on)
 
----
+Implementação de KNN e SVM em Python
 
-## 📘 Aula 04 – Modelos de Regressão em Machine Learning
+Testes com diferentes valores de k e C
 
-Este projeto faz parte do meu estudo em **Machine Learning com Python**, com foco em **modelos supervisionados de regressão**, utilizados para prever valores numéricos contínuos.
+Comparação de desempenho entre modelos
 
-Nesta aula, foram apresentados os principais algoritmos de regressão, suas aplicações práticas e as métricas utilizadas para avaliar a performance dos modelos.
+Análise do impacto do pré-processamento
 
----
+Objetivo do projeto
 
-### Conteúdos abordados
+Entender como funcionam algoritmos clássicos de classificação supervisionada e aprender a ajustar seus hiperparâmetros de forma consciente.
 
-- Introdução aos modelos de regressão
-- Diferença entre regressão simples e múltipla
-- Conceitos de variável preditora e variável alvo (target)
-- Avaliação de modelos de regressão
+📘 Aula 03 – Aprendizado Não Supervisionado: K-Means e DBSCAN
 
----
+Este projeto introduz o aprendizado não supervisionado, com foco em técnicas de clusterização aplicadas a dados sem rótulos.
 
-### Algoritmos estudados
+O objetivo foi aprender a segmentar dados, interpretar agrupamentos e avaliar a qualidade dos clusters.
 
-- Regressão Linear (simples e múltipla)
-- Support Vector Regression (SVR)
-- Árvores de Regressão
-- KNN para regressão
-- Random Forest para regressão
+Conteúdos abordados
 
----
+Conceito de aprendizado não supervisionado
 
-### Avaliação de modelos
+Algoritmo K-Means:
 
-- R² (coeficiente de determinação)
-- MAE (Erro Absoluto Médio)
-- MSE (Erro Quadrático Médio)
-- Validação cruzada
-- Análise de underfitting e overfitting
-- Comparação entre modelos
+Funcionamento baseado em centroides
 
----
+Escolha do número de clusters
 
-### Objetivo do projeto
+Método Elbow
 
-Compreender o funcionamento dos principais algoritmos de regressão, aprender a avaliá-los corretamente e identificar o equilíbrio entre complexidade do modelo e capacidade de generalização.
+Algoritmo DBSCAN:
 
----
+Agrupamento por densidade
 
-## 📘 Aula 05 – Modelos de Classificação em Machine Learning
+Identificação de outliers
 
-Este projeto faz parte do meu estudo em **Machine Learning com Python**, com foco em **modelos supervisionados de classificação**, utilizados para prever categorias ou classes a partir de dados rotulados.
+Métricas de validação de clusters:
 
-Nesta aula, foram estudados os principais algoritmos de classificação, suas aplicações práticas e as métricas utilizadas para avaliar a qualidade das predições.
+Silhouette Score
 
----
+Adjusted Rand Index
 
-### Conteúdos abordados
+Comparação entre K-Means e DBSCAN
 
-- Introdução aos modelos de classificação
-- Diferença entre regressão e classificação
-- Conceitos de classes, rótulos e fronteiras de decisão
-- Limitações comuns em modelos de classificação
+Desafios do aprendizado de máquina
 
----
+Bibliotecas apresentadas
 
-### Algoritmos estudados
+Scikit-learn – K-Means, DBSCAN e métricas
 
-- Regressão Logística
-- Naive Bayes
-- Support Vector Machine (SVM)
-- K-Nearest Neighbors (KNN)
-- Árvores de Decisão
+Matplotlib – visualização de clusters
 
----
+Pandas – análise exploratória dos dados
 
-### Avaliação de modelos
+Atividade prática (Hands-on)
 
-- Acurácia
-- Precisão e Recall
-- F1-score
-- Matriz de Confusão
-- Curva ROC e AUC
-- Validação cruzada
-- Análise de overfitting e underfitting
-- Impacto de dados desbalanceados
+Aplicação de K-Means e DBSCAN
 
----
+Avaliação da qualidade dos clusters
 
-### Objetivo do projeto
+Análise visual dos agrupamentos
 
-Aplicar e comparar diferentes algoritmos de classificação, entendendo seus pontos fortes, limitações e critérios de avaliação para escolher o modelo mais adequado a cada problema.
+Comparação entre diferentes técnicas
 
----
+Objetivo do projeto
+
+Aprender a trabalhar com dados não rotulados e escolher a técnica de clusterização mais adequada conforme o comportamento dos dados.
+
+📘 Aula 04 – Consolidação de Modelagem e Boas Práticas
+
+Este projeto tem como foco a consolidação dos conceitos de modelagem em Machine Learning, reforçando boas práticas e visão crítica sobre resultados.
+
+Conteúdos abordados
+
+Organização do pipeline de Machine Learning
+
+Qualidade dos dados e impacto nos modelos
+
+Feature engineering
+
+Overfitting e underfitting
+
+Estratégias de regularização
+
+Interpretação crítica de métricas
+
+Bibliotecas apresentadas
+
+Scikit-learn
+
+Pandas
+
+NumPy
+
+Atividade prática (Hands-on)
+
+Revisão de modelos já treinados
+
+Análise de erros
+
+Discussão sobre generalização
+
+Objetivo do projeto
+
+Desenvolver maturidade analítica para avaliar modelos além do resultado numérico, considerando contexto e limitações.
+
+📘 Aula 05 – Validação Cruzada e Seleção de Hiperparâmetros
+
+Este projeto aborda técnicas estatísticas para avaliação robusta de modelos, reduzindo o risco de overfitting.
+
+Conteúdos abordados
+
+Limitações do treino/teste simples
+
+Validação cruzada (K-Fold)
+
+Comparação entre modelos
+
+Seleção de hiperparâmetros
+
+GridSearchCV
+
+Bibliotecas apresentadas
+
+Scikit-learn – KFold, cross_val_score, GridSearchCV
+
+Atividade prática (Hands-on)
+
+Aplicação de K-Fold
+
+Comparação de múltiplos algoritmos
+
+Busca dos melhores hiperparâmetros
+
+Objetivo do projeto
+
+Garantir que os modelos generalizem bem para dados não vistos, aumentando a confiabilidade das análises.
+
+📘 Aula 06 – Métricas de Avaliação para Classificação
+
+Este projeto aprofunda o estudo das métricas de avaliação de modelos classificadores, indo além da acurácia.
+
+Conteúdos abordados
+
+Matriz de confusão
+
+Acurácia
+
+Precisão
+
+Recall
+
+F1-Score
+
+Classification Report
+
+Avaliação por classe
+
+Impacto de dados desbalanceados
+
+Bibliotecas apresentadas
+
+Scikit-learn – métricas de classificação
+
+Matplotlib – visualização da matriz de confusão
+
+Atividade prática (Hands-on)
+
+Avaliação de classificadores
+
+Interpretação de métricas
+
+Comparação entre modelos
+
+Objetivo do projeto
+
+Aprender a escolher métricas alinhadas ao impacto real do erro no problema de negócio.
+
+📘 Aula 07 – Curva ROC e AUC
+
+Este projeto explora métricas baseadas em probabilidade, com foco em Curva ROC e AUC, muito utilizadas em classificação binária.
+
+Conteúdos abordados
+
+Classificadores probabilísticos
+
+Curva ROC (TPR vs FPR)
+
+Interpretação da AUC
+
+Comparação entre modelos
+
+Modelo aleatório vs modelo ideal
+
+Bibliotecas apresentadas
+
+Scikit-learn – ROC Curve e AUC
+
+Matplotlib – visualização da curva ROC
+
+Atividade prática (Hands-on)
+
+Geração da curva ROC
+
+Cálculo da AUC
+
+Análise visual da performance dos modelos
+
+Objetivo do projeto
+
+Avaliar modelos de classificação binária de forma mais completa, considerando diferentes limiares de decisão.
