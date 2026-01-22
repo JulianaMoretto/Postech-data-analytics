@@ -19,6 +19,8 @@ O desafio consiste em prever a **tendência do IBOVESPA no pregão seguinte** (a
 ## Objetivo do Projeto
 
 Construir um **modelo de classificação binária** capaz de prever se o índice IBOVESPA fechará em **alta (↑)** ou **baixa (↓)** no dia seguinte, atendendo aos critérios estabelecidos no desafio.
+Ser treinado e testado com o objetivo de alcançar **acurácia mínima de 75%**.
+Utilizar como conjunto de teste os últimos **30 dias** dis poníveis de uma série histórica de fechamento, abertura, volume e variação da IBOVESPA dos últimos 20 anos.
 
 ### Definição do Target
 
@@ -58,12 +60,27 @@ O projeto segue um pipeline completo de análise de séries temporais e Machine 
 - Identificação de não estacionariedade na série original
 - Aplicação de diferenciação para estabilização estatística
 
-### 3. Engenharia de Variáveis
-- Retornos logarítmicos
-- Lags temporais
-- Médias móveis
-- Volatilidade histórica
-- Features derivadas exclusivamente da própria série temporal
+### 3. Feature Engineering
+
+As seguintes *features* foram criadas:
+
+**- Preços defasados** - Fechamento, Máxima, Mínima e Abertura que representam o estado do mercado no ultimo pregão, sendo colocados defasados para representar a memória do mercado.
+**- Médias móveis** -	*lags* de 1, 5, 20 e 60 dias, indicador extremamente utilizados em séries financeiras.
+**- Distância até a média** - Normalização do preço em relação à tendência, importante para verificar se o preço está esticado ou revertendo.
+**- Retornos defasados** -	*lags* de 1, 5, 10 e 20 dias, capturando a inércia do mercado.
+**- Volatilidade intradiária** - Abertura vs Fechamento defasados, medindo a força do movimento dentro do pregão e também se o mercado está calmo ou estressado.
+**- Range diário** - Mede a incerteza e extremos de preço.
+
+**Target**
+
+1 = alta no dia seguinte  
+0 = queda no dia seguinte
+
+**Train/Test Split**
+
+- Treino: todos os dados históricos
+- Teste: últimos 30 dias
+- Divisão não aleatória, respeitando a ordem temporal.
 
 ### 4. Modelagem
 Foram avaliados múltiplos modelos de classificação:
@@ -75,6 +92,12 @@ Foram avaliados múltiplos modelos de classificação:
 
 Os modelos foram comparados considerando desempenho, robustez e impacto do desbalanceamento das classes.
 
+## Estrutura
+Tech_Challenge_Fase2
+│
+├── Grupo126_TechChallenge_Fase2_SeriesTemporais.ipynb   # Notebook principal
+├── Dados Históricos - Ibovespa.csv                      # Base de dados
+└── README.md   
 ---
 
 ## Métricas de Avaliação
@@ -115,6 +138,11 @@ Os modelos foram comparados considerando desempenho, robustez e impacto do desba
 - Scikit-learn  
 - XGBoost  
 - Statsmodels  
+
+---
+
+## Possíveis melhorias e trabalhos futuros
+Como próximos passos, o modelo pode ser aprimorado com a inclusão de novas features de regime e momentum, além de indicadores macroeconômicos e de volume. Também é recomendável testar janelas maiores de validação temporal e técnicas de balanceamento mais robustas. Pode-se aplicar também ajustes de threshold e otimização bayesiana de hiperparâmetros que possam vir a elevar o elevar o F1-Score. Por fim, a adoção de modelos híbridos (clássicos + deep learning) como ARIMA, Prophet, LSTM/GRU, por exemplo, pode vir a capturar padrões não lineares mais complexos.
 
 ---
 
