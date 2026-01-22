@@ -97,7 +97,7 @@ Tech_Challenge_Fase2
 │
 ├── Grupo126_TechChallenge_Fase2_SeriesTemporais.ipynb   # Notebook principal
 ├── Dados Históricos - Ibovespa.csv                      # Base de dados
-└── README.md   
+└── README.md                                            ← link do vídeo
 ---
 
 ## Métricas de Avaliação
@@ -143,6 +143,15 @@ Tech_Challenge_Fase2
 
 ## Possíveis melhorias e trabalhos futuros
 Como próximos passos, o modelo pode ser aprimorado com a inclusão de novas features de regime e momentum, além de indicadores macroeconômicos e de volume. Também é recomendável testar janelas maiores de validação temporal e técnicas de balanceamento mais robustas. Pode-se aplicar também ajustes de threshold e otimização bayesiana de hiperparâmetros que possam vir a elevar o elevar o F1-Score. Por fim, a adoção de modelos híbridos (clássicos + deep learning) como ARIMA, Prophet, LSTM/GRU, por exemplo, pode vir a capturar padrões não lineares mais complexos.
+
+---
+
+## Apresentação do Projeto
+
+O vídeo abaixo apresenta o contexto do desafio, abordagem metodológica,modelos utilizados e principais resultados obtidos.
+
+Assista à apresentação:
+[https://link-do-video](https://drive.google.com/file/d/17y2Jteft3pNSABpY9eRd3u-5kvWdW8eA/view?usp=drive_link)
 
 ---
 
