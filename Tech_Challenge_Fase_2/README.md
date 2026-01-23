@@ -8,8 +8,8 @@ O desafio consiste em prever a **tendência do IBOVESPA no pregão seguinte** (a
 
 O vídeo abaixo apresenta o contexto do desafio, abordagem metodológica, modelos utilizados e principais resultados obtidos.
 
-Assista à apresentação:
-[https://link-do-video](https://drive.google.com/file/d/17y2Jteft3pNSABpY9eRd3u-5kvWdW8eA/view?usp=drive_link)
+Assista à apresentação (Drive) [https://link-drive](https://drive.google.com/file/d/17y2Jteft3pNSABpY9eRd3u-5kvWdW8eA/view?usp=drive_link)
+(Youtube) [https://link-youtube] (https://www.youtube.com/watch?v=mDkHY1w59uw)
 
 ---
 
