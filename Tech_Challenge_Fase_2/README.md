@@ -4,6 +4,13 @@ Projeto desenvolvido no contexto da **Pós-Graduação em Data Analytics**, com 
 
 O desafio consiste em prever a **tendência do IBOVESPA no pregão seguinte** (alta ou baixa), utilizando exclusivamente dados históricos do próprio índice.
 
+## Apresentação do Projeto
+
+O vídeo abaixo apresenta o contexto do desafio, abordagem metodológica, modelos utilizados e principais resultados obtidos.
+
+Assista à apresentação:
+[https://link-do-video](https://drive.google.com/file/d/17y2Jteft3pNSABpY9eRd3u-5kvWdW8eA/view?usp=drive_link)
+
 ---
 
 ## Grupo
