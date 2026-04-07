@@ -105,6 +105,7 @@ Inclui:
 #### `Tech Challenge FIAP_Fase 3_COVID_PNAD.pptx.pdf`
 
 Apresentação executiva com os principais resultados, insights e recomendações para gestão hospitalar.
+https://docs.google.com/presentation/d/1Iwoz6eKLs-6XBFQ8CZMFAyjibqmeuJeR/edit?slide=id.p12#slide=id.p12
 
 ---
 
