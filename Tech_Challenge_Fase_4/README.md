@@ -5,6 +5,8 @@ Projeto desenvolvido no contexto da **Pós-Graduação em Data Analytics (FIAP P
 O desafio consiste em prever o **nível de obesidade de um indivíduo** — em 7 categorias — a partir exclusivamente de **hábitos alimentares e de estilo de vida**, sem utilizar peso ou altura diretamente (para evitar data leakage via IMC).
 
 ---
+### Vídeo explicativo - https://www.youtube.com/watch?v=UbiZQvteimM
+### Streamlit - https://techchallenge4obesityanalysis-qsvazqxbv4r4cz8sbkvtua.streamlit.app/
 
 ## Como Executar o Projeto
 
