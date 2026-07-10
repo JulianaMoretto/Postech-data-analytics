@@ -1,0 +1,140 @@
+{
+  "best_model_name": "Hist Gradient Boosting",
+  "test_accuracy": 0.792,
+  "auc_roc": 0.9655,
+  "f1_macro": 0.79,
+  "classes": [
+    "Insufficient_Weight",
+    "Normal_Weight",
+    "Obesity_Type_I",
+    "Obesity_Type_II",
+    "Obesity_Type_III",
+    "Overweight_Level_I",
+    "Overweight_Level_II"
+  ],
+  "numerical_cols": [
+    "Age",
+    "FCVC",
+    "NCP",
+    "CH2O",
+    "FAF",
+    "TUE",
+    "CAEC_num",
+    "CALC_num",
+    "healthy_score",
+    "sedentary",
+    "fam_x_favc",
+    "meal_activity_ratio",
+    "high_alcohol"
+  ],
+  "categorical_cols": [
+    "Gender",
+    "family_history",
+    "FAVC",
+    "CAEC",
+    "SMOKE",
+    "SCC",
+    "CALC",
+    "MTRANS",
+    "age_group"
+  ],
+  "features_dropped": [
+    "Height",
+    "Weight"
+  ],
+  "note": "BMI removido para evitar leakage. Dataset parcialmente sintético (SMOTE).",
+  "model_results": {
+    "Logistic Regression": {
+      "cv_mean": 0.6114,
+      "cv_std": 0.0203,
+      "test_acc": 0.6028,
+      "auc_roc": 0.8882,
+      "f1_macro": 0.5735
+    },
+    "Random Forest": {
+      "cv_mean": 0.7927,
+      "cv_std": 0.0201,
+      "test_acc": 0.7896,
+      "auc_roc": 0.9611,
+      "f1_macro": 0.7877
+    },
+    "Gradient Boosting": {
+      "cv_mean": 0.7755,
+      "cv_std": 0.0157,
+      "test_acc": 0.7825,
+      "auc_roc": 0.957,
+      "f1_macro": 0.7831
+    },
+    "Hist Gradient Boosting": {
+      "cv_mean": 0.7885,
+      "cv_std": 0.0166,
+      "test_acc": 0.792,
+      "auc_roc": 0.9655,
+      "f1_macro": 0.79
+    },
+    "SVM": {
+      "cv_mean": 0.7613,
+      "cv_std": 0.0217,
+      "test_acc": 0.7683,
+      "auc_roc": 0.9454,
+      "f1_macro": 0.7638
+    }
+  },
+  "classification_report": {
+    "Insufficient_Weight": {
+      "precision": 0.8032786885245902,
+      "recall": 0.9074074074074074,
+      "f1-score": 0.8521739130434782,
+      "support": 54.0
+    },
+    "Normal_Weight": {
+      "precision": 0.6666666666666666,
+      "recall": 0.6206896551724138,
+      "f1-score": 0.6428571428571429,
+      "support": 58.0
+    },
+    "Obesity_Type_I": {
+      "precision": 0.7285714285714285,
+      "recall": 0.7285714285714285,
+      "f1-score": 0.7285714285714285,
+      "support": 70.0
+    },
+    "Obesity_Type_II": {
+      "precision": 0.9272727272727272,
+      "recall": 0.85,
+      "f1-score": 0.8869565217391304,
+      "support": 60.0
+    },
+    "Obesity_Type_III": {
+      "precision": 0.9846153846153847,
+      "recall": 0.9846153846153847,
+      "f1-score": 0.9846153846153847,
+      "support": 65.0
+    },
+    "Overweight_Level_I": {
+      "precision": 0.7213114754098361,
+      "recall": 0.7586206896551724,
+      "f1-score": 0.7394957983193278,
+      "support": 58.0
+    },
+    "Overweight_Level_II": {
+      "precision": 0.7017543859649122,
+      "recall": 0.6896551724137931,
+      "f1-score": 0.6956521739130435,
+      "support": 58.0
+    },
+    "accuracy": 0.7919621749408984,
+    "macro avg": {
+      "precision": 0.7904958224322208,
+      "recall": 0.7913656768336573,
+      "f1-score": 0.7900460518655622,
+      "support": 423.0
+    },
+    "weighted avg": {
+      "precision": 0.7924773036479754,
+      "recall": 0.7919621749408984,
+      "f1-score": 0.7913926224205377,
+      "support": 423.0
+    }
+  }
+}
