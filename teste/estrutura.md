@@ -10,7 +10,7 @@ Este guia resume como usar as tabelas do HubSpot CRM para análises de negócio.
 
 ### Visão do fluxo: Silver → Journey → Gold
 
-> Leia da esquerda para a direita: a **Silver** guarda os dados detalhados, a **Journey** conecta lead, deal e origem, e a **Gold** transforma essa jornada em indicadores prontos para a tomada de decisão.
+> Leia de cima para a baixo: a **Silver** guarda os dados detalhados, a **Journey** conecta lead, deal e origem, e a **Gold** transforma essa jornada em indicadores prontos para a tomada de decisão.
 
 | Camada / Tabela | O que contém | Quando usar |
 |---|---|---|
@@ -18,6 +18,7 @@ Este guia resume como usar as tabelas do HubSpot CRM para análises de negócio.
 | **Journey** | **Visão conectada:** Lead, Deal e Origem/Atribuição. <br>*(Tabela: `loft-dl-fintech.hubspot_crm.journey`)* | Quando precisar explicar a jornada de conversão (como um lead virou um deal e de onde ele veio). |
 | **Gold** | **Indicadores consolidados:** Funil Inbound (Fiança e CRM), Funil Outbound e Email Events. | Como ponto de partida para dashboards, para acompanhar performance, conversão, vendas e contratos de forma consolidada. |
 
+> **Resumo do fluxo**: Silver detalha → Journey conecta → Gold resume para decisão.
 ---
 
 ## Quando usar Gold
@@ -69,7 +70,7 @@ Use as tabelas **Silver** quando precisar de mais detalhe, investigação ou an�
 
 ---
 
-## 📖 Definições Importantes
+## Definições Importantes
 
 ### MQL
 Lead do funil Inbound com data de criação preenchida. É usado como marco inicial da jornada Inbound.
