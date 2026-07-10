@@ -12,32 +12,11 @@ Este guia resume como usar as tabelas do HubSpot CRM para análises de negócio.
 
 > Leia da esquerda para a direita: a **Silver** guarda os dados detalhados, a **Journey** conecta lead, deal e origem, e a **Gold** transforma essa jornada em indicadores prontos para a tomada de decisão.
 
-### 1. Camada Silver
-Use quando precisar investigar o detalhe por trás de um indicador da camada Gold. A Silver possui várias tabelas de apoio para análise operacional:
-- Leads
-- Deals
-- Empresas
-- Owners
-- Atividades
-- Atribuição
-- Check-in / Check-out
-- Email Events
-
-### 2. Tabela Journey
-É uma tabela específica dentro da Silver: `loft-dl-fintech.hubspot_crm.journey`. Ela conecta lead, deal e origem em uma mesma visão.
-- Lead
-- Deal
-- Origem / atribuição
-
-**Use quando:** precisar explicar como um lead virou um deal e de onde ele veio.
-
-### 3. Camada Gold
-Use como ponto de partida para dashboards e decisões estratégicas. Ela já traz indicadores consolidados para acompanhar funil, conversão, reuniões, SQLs, vendas e contratos.
-- Funil Inbound (Fiança e CRM)
-- Funil Outbound
-- Email Events
-
-**Use quando:** quiser acompanhar performance, conversão, vendas e contratos de forma consolidada.
+| Camada / Tabela | O que contém | Quando usar |
+|---|---|---|
+| **Silver** | **Dados detalhados e tabelas de apoio:** Leads, Deals, Empresas, Owners, Atividades, Atribuição, Check-in/Check-out, Email Events. | Quando precisar investigar o detalhe operacional por trás de um indicador da camada Gold. |
+| **Journey** | **Visão conectada:** Lead, Deal e Origem/Atribuição. <br>*(Tabela: `loft-dl-fintech.hubspot_crm.journey`)* | Quando precisar explicar a jornada de conversão (como um lead virou um deal e de onde ele veio). |
+| **Gold** | **Indicadores consolidados:** Funil Inbound (Fiança e CRM), Funil Outbound e Email Events. | Como ponto de partida para dashboards, para acompanhar performance, conversão, vendas e contratos de forma consolidada. |
 
 ---
 
